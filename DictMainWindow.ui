@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DictMainWindow</class>
+ <widget class="QMainWindow" name="DictMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AnsleDict</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rc.qrc">
+    <normaloff>:/new/prefix1/rc/Wordpress.ico</normaloff>:/new/prefix1/rc/Wordpress.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string>德语词典</string>
+  </property>
+  <property name="whatsThis">
+   <string>德语词典</string>
+  </property>
+  <property name="accessibleName">
+   <string>德语词典</string>
+  </property>
+  <property name="accessibleDescription">
+   <string>德语词典</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,5">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="6">
+          <item>
+           <widget class="QComboBox" name="DictComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="WordTableView">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::TabFocus</enum>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="WordLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="rc.qrc">:/new/prefix1/rc/Wordpress.ico</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="WordLineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::CustomContextMenu</enum>
+            </property>
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="ExpComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <item>
+             <property name="text">
+              <string>头匹配</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>中匹配</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>尾匹配</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="MeanTextBrowser">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>620</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>操作</string>
+    </property>
+    <addaction name="action_Add"/>
+    <addaction name="action_Delete"/>
+    <addaction name="separator"/>
+    <addaction name="action_AddToNewWord"/>
+    <addaction name="action_Speak"/>
+    <addaction name="separator"/>
+    <addaction name="action_Config"/>
+    <addaction name="separator"/>
+    <addaction name="action_Mini"/>
+    <addaction name="action_NomWindow"/>
+    <addaction name="action_Max"/>
+    <addaction name="separator"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action_Qt"/>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Add"/>
+   <addaction name="action_Delete"/>
+   <addaction name="separator"/>
+   <addaction name="action_AddToNewWord"/>
+   <addaction name="action_Speak"/>
+   <addaction name="separator"/>
+   <addaction name="action_Config"/>
+   <addaction name="separator"/>
+   <addaction name="action_quit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Add">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Plus.ico</normaloff>:/new/prefix1/rc/Plus.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加词典</string>
+   </property>
+   <property name="statusTip">
+    <string>添加词典</string>
+   </property>
+   <property name="whatsThis">
+    <string>添加词典</string>
+   </property>
+  </action>
+  <action name="action_Delete">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Minus.ico</normaloff>:/new/prefix1/rc/Minus.ico</iconset>
+   </property>
+   <property name="text">
+    <string>删除词典</string>
+   </property>
+   <property name="statusTip">
+    <string>删除词典</string>
+   </property>
+   <property name="whatsThis">
+    <string>删除词典</string>
+   </property>
+  </action>
+  <action name="action_Config">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Gear.ico</normaloff>:/new/prefix1/rc/Gear.ico</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="statusTip">
+    <string>设置</string>
+   </property>
+   <property name="whatsThis">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="action_Qt">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/qt-logo.png</normaloff>:/new/prefix1/rc/qt-logo.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于Qt</string>
+   </property>
+   <property name="statusTip">
+    <string>关于Qt</string>
+   </property>
+   <property name="whatsThis">
+    <string>关于Qt</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Copyright.ico</normaloff>:/new/prefix1/rc/Copyright.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关于软件</string>
+   </property>
+   <property name="statusTip">
+    <string>关于软件</string>
+   </property>
+   <property name="whatsThis">
+    <string>关于软件</string>
+   </property>
+  </action>
+  <action name="action_Mini">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Reduced Size.ico</normaloff>:/new/prefix1/rc/Reduced Size.ico</iconset>
+   </property>
+   <property name="text">
+    <string>最小化</string>
+   </property>
+   <property name="toolTip">
+    <string>最小化到托盘区</string>
+   </property>
+   <property name="statusTip">
+    <string>最小化到托盘区</string>
+   </property>
+   <property name="whatsThis">
+    <string>最小化到托盘区</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Standby.ico</normaloff>:/new/prefix1/rc/Standby.ico</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出软件</string>
+   </property>
+   <property name="statusTip">
+    <string>退出软件</string>
+   </property>
+   <property name="whatsThis">
+    <string>退出软件</string>
+   </property>
+  </action>
+  <action name="action_NomWindow">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Application.ico</normaloff>:/new/prefix1/rc/Application.ico</iconset>
+   </property>
+   <property name="text">
+    <string>还原</string>
+   </property>
+   <property name="toolTip">
+    <string>还原默认窗口</string>
+   </property>
+  </action>
+  <action name="action_Max">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Full Screen.ico</normaloff>:/new/prefix1/rc/Full Screen.ico</iconset>
+   </property>
+   <property name="text">
+    <string>最大化</string>
+   </property>
+   <property name="toolTip">
+    <string>最大化窗口</string>
+   </property>
+  </action>
+  <action name="action_AddToNewWord">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Wait.ico</normaloff>:/new/prefix1/rc/Wait.ico</iconset>
+   </property>
+   <property name="text">
+    <string>加入生词本</string>
+   </property>
+   <property name="toolTip">
+    <string>加入生词本</string>
+   </property>
+   <property name="statusTip">
+    <string>加入生词本</string>
+   </property>
+   <property name="whatsThis">
+    <string>加入生词本</string>
+   </property>
+  </action>
+  <action name="action_Speak">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/new/prefix1/rc/Sound On (2).ico</normaloff>:/new/prefix1/rc/Sound On (2).ico</iconset>
+   </property>
+   <property name="text">
+    <string>发音</string>
+   </property>
+   <property name="toolTip">
+    <string>发音</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

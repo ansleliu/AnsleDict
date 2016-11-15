@@ -1,0 +1,53 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>rc/Application.ico</file>
+        <file>rc/Applications.ico</file>
+        <file>rc/Download (2).ico</file>
+        <file>rc/Folder (2).ico</file>
+        <file>rc/Folder2 (2).ico</file>
+        <file>rc/Folder3 (2).ico</file>
+        <file>rc/Forbidden (2).ico</file>
+        <file>rc/Home.ico</file>
+        <file>rc/Home2.ico</file>
+        <file>rc/Info.ico</file>
+        <file>rc/Info2.ico</file>
+        <file>rc/Key.ico</file>
+        <file>rc/Music (2).ico</file>
+        <file>rc/Music2 (2).ico</file>
+        <file>rc/Ok (2).ico</file>
+        <file>rc/pic.png</file>
+        <file>rc/Player FastFwd (2).ico</file>
+        <file>rc/Player FastRev (2).ico</file>
+        <file>rc/Player Next (2).ico</file>
+        <file>rc/Player Pause (2).ico</file>
+        <file>rc/Player Play (2).ico</file>
+        <file>rc/Player Previous (2).ico</file>
+        <file>rc/Player Stop (2).ico</file>
+        <file>rc/Plus.ico</file>
+        <file>rc/qt-logo.png</file>
+        <file>rc/Sound Minus (2).ico</file>
+        <file>rc/Sound Off (2).ico</file>
+        <file>rc/Sound On (2).ico</file>
+        <file>rc/Sound Plus (2).ico</file>
+        <file>rc/Standby.ico</file>
+        <file>rc/Start.ico</file>
+        <file>rc/Tool (2).ico</file>
+        <file>rc/Tool2 (2).ico</file>
+        <file>rc/Wait.ico</file>
+        <file>rc/Minus.ico</file>
+        <file>rc/edit_clear.png</file>
+        <file>rc/Cancel.ico</file>
+        <file>rc/Copyright.ico</file>
+        <file>rc/Full Screen.ico</file>
+        <file>rc/Gear.ico</file>
+        <file>rc/Globe.ico</file>
+        <file>rc/Reduced Size.ico</file>
+        <file>rc/Wordpress.ico</file>
+        <file>rc/Clipboard Paste.ico</file>
+        <file>rc/Database.ico</file>
+        <file>rc/Dots.ico</file>
+        <file>rc/Go In.ico</file>
+        <file>rc/Go Out.ico</file>
+        <file>rc/User.ico</file>
+    </qresource>
+</RCC>
